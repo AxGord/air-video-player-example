@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<application xmlns="http://ns.adobe.com/air/application/33.1">
+    <id>net.axgord.VideoTest</id>
+    <architecture>64</architecture>
+    <versionNumber>0.0.1</versionNumber>
+    <filename>videotest</filename>
+    <name>VideoTest</name>
+    <copyright>Copyright (c) 2020 Alexander Gordeyko</copyright>
+    <initialWindow>
+        <title>VideoTest</title>
+        <autoOrients>false</autoOrients>
+		<content>[Path to content will be replaced by Visual Studio Code]</content>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <minSize>800 600</minSize>
+        <width>1024</width>
+        <height>768</height>
+        <renderMode>direct</renderMode>
+    </initialWindow>
+    <installFolder>axgord/VideoTest</installFolder>
+    <programMenuFolder>axgord</programMenuFolder>
+</application>
