@@ -15,7 +15,7 @@ class Main {
 
 	private function requestHandler(connection: IHttpConnection): Void {
 		switch connection.url {
-			case '': connection.sendHtml("Video server");
+			case '': connection.sendHtml('Video server');
 			case 'status': connection.sendText(Config.video_file + '\n' + timer.currentTime.totalMs);
 			case Config.video_file: connection.sendFile(Config.video_file);
 			case _: connection.notfound();

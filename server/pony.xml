@@ -6,8 +6,8 @@
 		</server>
 		<video>
 			<file>SerenityHD_DVD_Trailer.mp4</file>
-			<length>0:03</length>
-			<!-- <length>2:20</length> -->
+			<!-- <length>0:03</length> -->
+			<length>2:20</length>
 		</video>
 	</config>
 	<server>
