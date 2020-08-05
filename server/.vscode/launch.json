@@ -1,0 +1,15 @@
+{
+"configurations": [
+{
+"request": "launch",
+"name": "Launch Program",
+"type": "node",
+"preLaunchTask": "default",
+"program": "${workspaceFolder}/bin//app",
+"internalConsoleOptions": "openOnSessionStart",
+"cwd": "${workspaceFolder}/bin/",
+"console": "internalConsole"
+}
+],
+"version": "0.2.0"
+}

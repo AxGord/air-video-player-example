@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<config>
+		<server>
+			<port>8080</port>
+		</server>
+		<video>
+			<file>SerenityHD_DVD_Trailer.mp4</file>
+			<length>0:03</length>
+			<!-- <length>2:20</length> -->
+		</video>
+	</config>
+	<server>
+		<haxe>6010</haxe>
+	</server>
+	<haxelib>
+		<lib>pony dev</lib>
+		<lib>hxnodejs 12.1.0</lib>
+	</haxelib>
+	<build>
+		<prepare hxml="app">
+			<main>Main</main>
+			<js>bin/app.js</js>
+			<cp>src</cp>
+			<dce>full</dce>
+			<d>analyzer-optimize</d>
+			<d>js-es6</d>
+			<d>nodedt</d>
+		</prepare>
+		<build>
+			<hxml>app</hxml>
+		</build>
+	</build>
+	<uglify libcache="true">
+		<release>
+			<c/>
+			<m/>
+		</release>
+		<debug>
+			<sourcemap>
+				<input>bin/app.js.map</input>
+				<output>bin/app.js.map</output>
+				<url>app.js.map</url>
+				<source>app.js</source>
+				<offset>0</offset>
+			</sourcemap>
+		</debug>
+		<input>bin/app.js</input>
+		<output>bin/app.js</output>
+	</uglify>
+</project>
