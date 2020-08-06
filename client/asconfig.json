@@ -1,0 +1,25 @@
+{
+	"config": "airmobile",
+	"airOptions": {
+		"output": "bin-debug/videotest.air",
+        "android": {
+            "output": "bin-debug/Main.apk",
+            "signingOptions": {
+                "storetype": "pkcs12",
+                "keystore": "../../test_cert.p12"
+            },
+            "listen": true
+        }
+    },
+    "application": "air-app.xml",
+	"compilerOptions": {
+		"source-path": [
+			"src"
+		],
+        "output": "bin-debug/videotest.swf",
+        "debug": true,
+        "default-frame-rate": 24,
+        "use-network": true
+    },
+    "mainClass": "Main"
+}
